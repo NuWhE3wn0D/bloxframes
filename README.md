@@ -1,5 +1,7 @@
 # BloxFrames — Increase FPS in Roblox (free performance optimizer for Windows)
 
+![BloxFrames — Roblox FPS Optimizer for Windows](screenshot.png)
+
 **A free, lightweight Windows tool to increase Roblox FPS.** Pick a preset, hit **Get More FPS**, launch Roblox — done.
 
 If you have been searching for **how to get more fps in roblox**, BloxFrames is the simple answer: it tunes Roblox's own FastFlags, clears the cache and prioritizes the game, all from one tiny portable `.exe`. No install, no ads, no telemetry. Built to give you **more fps in roblox** on everything from a potato laptop to a high-end rig.
