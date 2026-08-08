@@ -4,7 +4,7 @@
 
 **A free, lightweight Windows tool to increase Roblox FPS.** Pick a preset, hit **Get More FPS**, launch Roblox — done.
 
-If you have been searching for **how to get more fps in roblox**, BloxFrames is the simple answer: it tunes Roblox's own FastFlags, clears the cache and prioritizes the game, all from one tiny portable `.exe`. No install, no ads, no telemetry. Built to give you **more fps in roblox** on everything from a potato laptop to a high-end rig.
+If you have been searching for **how to get more fps in roblox**, BloxFrames is the simple answer: it tunes Roblox's own FastFlags, clears the cache and prioritizes the game, all from one small Windows installer (`.msi`). No ads, no telemetry. Built to give you **more fps in roblox** on everything from a potato laptop to a high-end rig.
 
 ## Why BloxFrames
 
@@ -19,7 +19,7 @@ Roblox runs on the same graphics engine for everyone, but its default settings l
 - **Cache cleaner** — clears Roblox logs / temp / cached assets and reports how many MB it freed.
 - **Prioritize Roblox** — sets the running game to High priority across all CPU cores for steadier frame pacing.
 - **Fully reversible** — Reset removes every flag BloxFrames added and leaves your own settings untouched.
-- **Portable** — one small `.exe`, no installer, runs on Windows 10/11 (.NET Framework 4.8, preinstalled).
+- **Simple install** — a small `.msi` package, runs on Windows 10/11 (.NET Framework 4.8, preinstalled).
 
 ## How it works
 
@@ -29,7 +29,7 @@ BloxFrames writes Roblox's own `ClientAppSettings.json` (in each `Versions\<ver>
 
 1. Download `BloxFrames.zip`
 2. Unzip it anywhere
-3. Double-click `BloxFrames.exe` — no installation needed
+3. Run `BloxFrames.msi` and follow the installer
 
 ## Quick start — how to get more fps in roblox
 
