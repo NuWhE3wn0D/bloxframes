@@ -1,6 +1,10 @@
-# BloxFrames — a free Windows FPS tuner and performance tracker for Roblox
+# BloxFrames — a free roblox fps booster that keeps frames steady in every fight
 
-BloxFrames is a tiny Windows utility that helps Roblox players squeeze real frames out of the same engine everyone else is running, then watch the payoff happen in real time. It runs on Windows 10 and Windows 11, costs nothing, needs no account, and leaves no watermark anywhere in Roblox or on your desktop. If you landed here searching for bloxframes because your laptop chugs through Blox Fruits or your desktop stutters mid-raid, this is the lightweight fix that treats the cause (Roblox's conservative defaults) instead of the symptom.
+BloxFrames is a tiny Windows roblox fps booster built for players who care less about peak numbers and more about the frame-rate staying flat when a raid kicks off, a boss spawns, or a lobby fills up. It runs on Windows 10 and Windows 11, costs nothing, needs no account, and leaves no watermark anywhere in Roblox or on your desktop. If you landed here because Blox Fruits drops into the teens mid-combat or your desktop stutters the moment effects pile up, this is the lightweight fix that treats the cause (Roblox's conservative defaults) instead of the symptom.
+
+## Why use this as a roblox fps booster?
+
+Most "boosters" are bloated launchers that overpromise and under-deliver. BloxFrames is the opposite — it writes the exact FastFlag values Roblox already honours internally, so your frames don't just spike on an empty baseplate, they hold steady when a fight is actually happening and the engine is under real load.
 
 ## Download
 
